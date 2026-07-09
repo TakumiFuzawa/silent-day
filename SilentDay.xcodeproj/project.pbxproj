@@ -33,6 +33,8 @@
 		D6B58A482FFDFEA900659B9D /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B58A472FFDFEA900659B9D /* DayDetailView.swift */; };
 		D6B58A4A2FFE094A00659B9D /* NotificationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B58A492FFE094A00659B9D /* NotificationDetailView.swift */; };
 		D6B58A4C2FFE10FA00659B9D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B58A4B2FFE10FA00659B9D /* OnboardingView.swift */; };
+		D6B58A4E2FFF7BB000659B9D /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B58A4D2FFF7BB000659B9D /* StatisticsView.swift */; };
+		D6B58A502FFF7BBF00659B9D /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B58A4F2FFF7BBF00659B9D /* StatisticsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		D6B58A472FFDFEA900659B9D /* DayDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayDetailView.swift; sourceTree = "<group>"; };
 		D6B58A492FFE094A00659B9D /* NotificationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationDetailView.swift; sourceTree = "<group>"; };
 		D6B58A4B2FFE10FA00659B9D /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		D6B58A4D2FFF7BB000659B9D /* StatisticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		D6B58A4F2FFF7BBF00659B9D /* StatisticsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +216,7 @@
 		D6B58A372FFCCFFE00659B9D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D6B58A4F2FFF7BBF00659B9D /* StatisticsViewModel.swift */,
 				D6B58A432FFDFE9300659B9D /* CalendarViewModel.swift */,
 				D6B58A3D2FFCE03000659B9D /* AddWorryViewModel.swift */,
 				D6B58A382FFCCFFE00659B9D /* HomeViewModel.swift */,
@@ -222,6 +227,7 @@
 		D6B58A3A2FFCD01100659B9D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D6B58A4D2FFF7BB000659B9D /* StatisticsView.swift */,
 				D6B58A4B2FFE10FA00659B9D /* OnboardingView.swift */,
 				D6B58A492FFE094A00659B9D /* NotificationDetailView.swift */,
 				D6B58A472FFDFEA900659B9D /* DayDetailView.swift */,
@@ -377,10 +383,12 @@
 				D6B58A3E2FFCE03100659B9D /* AddWorryViewModel.swift in Sources */,
 				D6B58A392FFCCFFE00659B9D /* HomeViewModel.swift in Sources */,
 				D6B58A352FFCCAEA00659B9D /* Animations.swift in Sources */,
+				D6B58A502FFF7BBF00659B9D /* StatisticsViewModel.swift in Sources */,
 				D69A842A2FFCA16300EEF05D /* PeacefulLog.swift in Sources */,
 				D6B58A462FFDFEA100659B9D /* CalendarView.swift in Sources */,
 				D6B58A4A2FFE094A00659B9D /* NotificationDetailView.swift in Sources */,
 				D6B58A342FFCCAEA00659B9D /* Typography.swift in Sources */,
+				D6B58A4E2FFF7BB000659B9D /* StatisticsView.swift in Sources */,
 				D69A84302FFCBB3000EEF05D /* WorryRepository.swift in Sources */,
 				D6B58A402FFCE09800659B9D /* AddWorryView.swift in Sources */,
 			);

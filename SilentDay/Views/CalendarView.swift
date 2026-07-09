@@ -92,6 +92,21 @@ struct CalendarView: View {
             .onAppear {
                 viewModel.loadLogs()
             }
+            // --- ツールバー: 統計画面(S-07)への遷移ボタン(仕様書V1.2-01) ---
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    // NavigationLinkで統計画面へ「押して進む」遷移をする
+                    NavigationLink {
+                        StatisticsView(context: context)
+                    } label: {
+                        Image(systemName: "chart.bar")
+                            .foregroundStyle(Color.accentMain)
+                    }
+                    .accessibilityLabel("統計を見る")
+                }
+            }
+            // ナビゲーションバーも背景色に馴染ませる
+            .toolbarBackground(Color.bgBase, for: .navigationBar)
         }
     }
 
