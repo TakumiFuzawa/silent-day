@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D65256B02FFFB13100C7DBA5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65256AF2FFFB13000C7DBA5 /* WidgetKit.framework */; };
+		D65256B22FFFB13100C7DBA5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65256B12FFFB13100C7DBA5 /* SwiftUI.framework */; };
+		D65256B52FFFB13100C7DBA5 /* SilentDayWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65256B42FFFB13100C7DBA5 /* SilentDayWidgetBundle.swift */; };
+		D65256B72FFFB13100C7DBA5 /* SilentDayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65256B62FFFB13100C7DBA5 /* SilentDayWidget.swift */; };
+		D65256B92FFFB13300C7DBA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65256B82FFFB13300C7DBA5 /* Assets.xcassets */; };
+		D65256BD2FFFB13300C7DBA5 /* SilentDayWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D65256AD2FFFB13000C7DBA5 /* SilentDayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D69A83FE2FFC990300EEF05D /* SilentDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69A83FD2FFC990300EEF05D /* SilentDayApp.swift */; };
 		D69A84002FFC990300EEF05D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69A83FF2FFC990300EEF05D /* ContentView.swift */; };
 		D69A84022FFC990700EEF05D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D69A84012FFC990700EEF05D /* Assets.xcassets */; };
@@ -38,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D65256BB2FFFB13300C7DBA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D69A83F22FFC990300EEF05D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65256AC2FFFB13000C7DBA5;
+			remoteInfo = SilentDayWidgetExtension;
+		};
 		D69A840B2FFC990800EEF05D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D69A83F22FFC990300EEF05D /* Project object */;
@@ -54,7 +67,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D65256BE2FFFB13300C7DBA5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D65256BD2FFFB13300C7DBA5 /* SilentDayWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D65256AD2FFFB13000C7DBA5 /* SilentDayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SilentDayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65256AF2FFFB13000C7DBA5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D65256B12FFFB13100C7DBA5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D65256B42FFFB13100C7DBA5 /* SilentDayWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentDayWidgetBundle.swift; sourceTree = "<group>"; };
+		D65256B62FFFB13100C7DBA5 /* SilentDayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentDayWidget.swift; sourceTree = "<group>"; };
+		D65256B82FFFB13300C7DBA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D65256BA2FFFB13300C7DBA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D69A83FA2FFC990300EEF05D /* SilentDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D69A83FD2FFC990300EEF05D /* SilentDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentDayApp.swift; sourceTree = "<group>"; };
 		D69A83FF2FFC990300EEF05D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +123,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D65256AA2FFFB13000C7DBA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65256B22FFFB13100C7DBA5 /* SwiftUI.framework in Frameworks */,
+				D65256B02FFFB13100C7DBA5 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D69A83F72FFC990300EEF05D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -113,12 +156,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D65256AE2FFFB13000C7DBA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D65256AF2FFFB13000C7DBA5 /* WidgetKit.framework */,
+				D65256B12FFFB13100C7DBA5 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D65256B32FFFB13100C7DBA5 /* SilentDayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D65256B42FFFB13100C7DBA5 /* SilentDayWidgetBundle.swift */,
+				D65256B62FFFB13100C7DBA5 /* SilentDayWidget.swift */,
+				D65256B82FFFB13300C7DBA5 /* Assets.xcassets */,
+				D65256BA2FFFB13300C7DBA5 /* Info.plist */,
+			);
+			path = SilentDayWidget;
+			sourceTree = "<group>";
+		};
 		D69A83F12FFC990300EEF05D = {
 			isa = PBXGroup;
 			children = (
 				D69A83FC2FFC990300EEF05D /* SilentDay */,
 				D69A840D2FFC990800EEF05D /* SilentDayTests */,
 				D69A84172FFC990800EEF05D /* SilentDayUITests */,
+				D65256B32FFFB13100C7DBA5 /* SilentDayWidget */,
+				D65256AE2FFFB13000C7DBA5 /* Frameworks */,
 				D69A83FB2FFC990300EEF05D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,6 +194,7 @@
 				D69A83FA2FFC990300EEF05D /* SilentDay.app */,
 				D69A840A2FFC990800EEF05D /* SilentDayTests.xctest */,
 				D69A84142FFC990800EEF05D /* SilentDayUITests.xctest */,
+				D65256AD2FFFB13000C7DBA5 /* SilentDayWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,6 +307,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D65256AC2FFFB13000C7DBA5 /* SilentDayWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65256C12FFFB13300C7DBA5 /* Build configuration list for PBXNativeTarget "SilentDayWidgetExtension" */;
+			buildPhases = (
+				D65256A92FFFB13000C7DBA5 /* Sources */,
+				D65256AA2FFFB13000C7DBA5 /* Frameworks */,
+				D65256AB2FFFB13000C7DBA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SilentDayWidgetExtension;
+			productName = SilentDayWidgetExtension;
+			productReference = D65256AD2FFFB13000C7DBA5 /* SilentDayWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D69A83F92FFC990300EEF05D /* SilentDay */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D69A841E2FFC990800EEF05D /* Build configuration list for PBXNativeTarget "SilentDay" */;
@@ -248,10 +331,12 @@
 				D69A83F62FFC990300EEF05D /* Sources */,
 				D69A83F72FFC990300EEF05D /* Frameworks */,
 				D69A83F82FFC990300EEF05D /* Resources */,
+				D65256BE2FFFB13300C7DBA5 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D65256BC2FFFB13300C7DBA5 /* PBXTargetDependency */,
 			);
 			name = SilentDay;
 			productName = SilentDay;
@@ -304,6 +389,9 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					D65256AC2FFFB13000C7DBA5 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					D69A83F92FFC990300EEF05D = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -333,11 +421,20 @@
 				D69A83F92FFC990300EEF05D /* SilentDay */,
 				D69A84092FFC990800EEF05D /* SilentDayTests */,
 				D69A84132FFC990800EEF05D /* SilentDayUITests */,
+				D65256AC2FFFB13000C7DBA5 /* SilentDayWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D65256AB2FFFB13000C7DBA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65256B92FFFB13300C7DBA5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D69A83F82FFC990300EEF05D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,6 +461,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D65256A92FFFB13000C7DBA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65256B52FFFB13100C7DBA5 /* SilentDayWidgetBundle.swift in Sources */,
+				D65256B72FFFB13100C7DBA5 /* SilentDayWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D69A83F62FFC990300EEF05D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,6 +520,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D65256BC2FFFB13300C7DBA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D65256AC2FFFB13000C7DBA5 /* SilentDayWidgetExtension */;
+			targetProxy = D65256BB2FFFB13300C7DBA5 /* PBXContainerItemProxy */;
+		};
 		D69A840C2FFC990800EEF05D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D69A83F92FFC990300EEF05D /* SilentDay */;
@@ -427,6 +538,58 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D65256BF2FFFB13300C7DBA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SilentDayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SilentDayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SilentDay.SilentDayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D65256C02FFFB13300C7DBA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SilentDayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SilentDayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SilentDay.SilentDayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D69A841C2FFC990800EEF05D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -549,6 +712,7 @@
 		D69A841F2FFC990800EEF05D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
@@ -580,6 +744,7 @@
 		D69A84202FFC990800EEF05D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
@@ -683,6 +848,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D65256C12FFFB13300C7DBA5 /* Build configuration list for PBXNativeTarget "SilentDayWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65256BF2FFFB13300C7DBA5 /* Debug */,
+				D65256C02FFFB13300C7DBA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D69A83F52FFC990300EEF05D /* Build configuration list for PBXProject "SilentDay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
