@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	  起動画面(Launch Screen)の設定(仕様書セクション9 / V1.1-03)。
+	  storyboardを使わず、このUILaunchScreenキーだけでSwiftUIアプリの
+	  起動画面を定義できます(iOS 14以降の仕組み)。
+
+	  注意: この方式で指定できるのは「背景色」と「中央の画像」のみで、
+	  任意のテキスト(アプリ名など)は置けません。そのため
+	  「シンプルなアイコンを中央に配置」の案を採用しています。
+	-->
+	<key>UILaunchScreen</key>
+	<dict>
+		<!-- 背景色: Assets.xcassetsのカラーセット名で指定(BgBase = #12121A) -->
+		<key>UIColorName</key>
+		<string>BgBase</string>
+		<!-- 中央に表示する画像: Assets.xcassetsのイメージセット名で指定 -->
+		<key>UIImageName</key>
+		<string>LaunchIcon</string>
+	</dict>
+</dict>
+</plist>
