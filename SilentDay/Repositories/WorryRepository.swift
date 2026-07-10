@@ -13,7 +13,8 @@
 
 import Foundation
 import SwiftData
-import SwiftUI  // ファイル末尾の #Preview で使用
+import SwiftUI    // ファイル末尾の #Preview で使用
+import WidgetKit  // データ変更をウィジェットに即時反映するために使用(v1.3 STEP 6)
 
 // WorryItemのCRUD処理を担当するクラス。
 // CRUDとは Create(作成)/ Read(読み取り)/ Update(更新)/ Delete(削除)の頭文字で、
@@ -46,6 +47,7 @@ final class WorryRepository {
         let item = WorryItem(text: text)
         context.insert(item)   // contextに登録(この時点ではまだメモリ上)
         try context.save()     // 端末のデータベースに書き込んで確定させる
+        reloadWidget()         // ウィジェットの表示件数を即時更新(v1.3 STEP 6)
         return item
     }
 
@@ -76,6 +78,7 @@ final class WorryRepository {
         // SwiftDataのモデルはプロパティを書き換えるだけで変更が追跡されます。
         item.isCompleted = true
         try context.save()  // 変更を確定
+        reloadWidget()      // ウィジェットの表示件数を即時更新(v1.3 STEP 6)
     }
 
     // MARK: - Delete(削除)
@@ -87,6 +90,24 @@ final class WorryRepository {
     func delete(_ item: WorryItem) throws {
         context.delete(item)
         try context.save()
+        reloadWidget()  // ウィジェットの表示件数を即時更新(v1.3 STEP 6)
+    }
+
+    // MARK: - ウィジェットへの反映(v1.3 STEP 6 / 仕様書12.3)
+
+    // ホーム画面のウィジェットに「データが変わったので表示を作り直して」と依頼します。
+    //
+    // ■ なぜRepositoryに書くのか
+    // WorryItemの書き込み(追加・完了・削除)は必ずこのクラスを通るため、
+    // ここに1箇所書けば、どの画面・サービスから変更されても漏れなく反映されます。
+    // (ViewModelごとに書くと、将来の実装で呼び忘れる事故が起きやすい)
+    //
+    // ■ reloadAllTimelines()について
+    // 「即時反映のお願い」であって命令ではありません。通常は数秒以内に
+    // 反映されますが、最終的なタイミングはiOSが決めます(仕様書12.6)。
+    // 何度連続で呼んでもiOS側でまとめて処理されるため、負荷の心配は不要です。
+    private func reloadWidget() {
+        WidgetCenter.shared.reloadAllTimelines()
     }
 }
 
