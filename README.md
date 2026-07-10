@@ -101,9 +101,11 @@ iOSのホーム画面にSmall/Medium 2サイズのウィジェットを配置で
 
 > 通知詳細画面(S-03)と日別詳細画面(S-05)のスクリーンショットは今回未収録です。次バージョン(v1.1)で追加予定です。
 
-### ウィジェット
+### ウィジェット(ホーム画面)
 
-![widget](Screenshots/widget.png)
+| ホーム画面ウィジェット |
+|---|
+| <img src="Screenshots/widget.png" alt="widget" width="320"> |
 
 ## 工夫した点
 
