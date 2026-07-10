@@ -1,15 +1,8 @@
 import SwiftUI
 import SwiftData
 
-// MARK: - App Groupの識別子
-
-// アプリ本体とウィジェットが共有するデータ領域(App Group)のID。
-// Signing & Capabilitiesで両ターゲットに設定したIDと完全一致させる必要があります。
-// ※ STEP 4でウィジェット側からも同じIDを使うため、定数として切り出しています。
-//   (その際はこのファイルではなく、両ターゲットから見える場所に移す予定)
-enum AppGroup {
-    static let id = "group.com.test.SilentDay"
-}
+// ※ App GroupのID定数は、ウィジェットとも共有するため
+//   AppGroup.swift(両ターゲット共有ファイル)に移動しました(v1.3 STEP 4)
 
 @main
 struct SilentDayApp: App {

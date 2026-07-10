@@ -41,6 +41,11 @@
 		D6B58A4C2FFE10FA00659B9D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B58A4B2FFE10FA00659B9D /* OnboardingView.swift */; };
 		D6B58A4E2FFF7BB000659B9D /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B58A4D2FFF7BB000659B9D /* StatisticsView.swift */; };
 		D6B58A502FFF7BBF00659B9D /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B58A4F2FFF7BBF00659B9D /* StatisticsViewModel.swift */; };
+		A100000000000000000000B1 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000000A1 /* AppGroup.swift */; };
+		A100000000000000000000B2 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000000A1 /* AppGroup.swift */; };
+		A100000000000000000000B3 /* WorryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69A84292FFCA16300EEF05D /* WorryItem.swift */; };
+		A100000000000000000000B4 /* PeacefulLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69A84282FFCA16300EEF05D /* PeacefulLog.swift */; };
+		A100000000000000000000B5 /* WorryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69A842E2FFCBB2F00EEF05D /* WorryRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +98,7 @@
 		D65256C3300089D500C7DBA5 /* SilentDayWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SilentDayWidgetExtension.entitlements; sourceTree = "<group>"; };
 		D69A83FA2FFC990300EEF05D /* SilentDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D69A83FD2FFC990300EEF05D /* SilentDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentDayApp.swift; sourceTree = "<group>"; };
+		A100000000000000000000A1 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
 		D69A83FF2FFC990300EEF05D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D69A84012FFC990700EEF05D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D69A84042FFC990700EEF05D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -212,6 +218,7 @@
 				D69A84312FFCBB4C00EEF05D /* Services */,
 				D69A842C2FFCBB2F00EEF05D /* Repositories */,
 				D69A84272FFCA16300EEF05D /* Models */,
+				A100000000000000000000A1 /* AppGroup.swift */,
 				D69A83FD2FFC990300EEF05D /* SilentDayApp.swift */,
 				D69A83FF2FFC990300EEF05D /* ContentView.swift */,
 				D69A84012FFC990700EEF05D /* Assets.xcassets */,
@@ -471,6 +478,10 @@
 			files = (
 				D65256B52FFFB13100C7DBA5 /* SilentDayWidgetBundle.swift in Sources */,
 				D65256B72FFFB13100C7DBA5 /* SilentDayWidget.swift in Sources */,
+				A100000000000000000000B2 /* AppGroup.swift in Sources */,
+				A100000000000000000000B3 /* WorryItem.swift in Sources */,
+				A100000000000000000000B4 /* PeacefulLog.swift in Sources */,
+				A100000000000000000000B5 /* WorryRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A100000000000000000000B1 /* AppGroup.swift in Sources */,
 				D69A842B2FFCA16300EEF05D /* WorryItem.swift in Sources */,
 				D6B58A362FFCCAEA00659B9D /* Colors.swift in Sources */,
 				D6B58A3C2FFCD01100659B9D /* HomeView.swift in Sources */,
