@@ -89,6 +89,8 @@
 		D65256B62FFFB13100C7DBA5 /* SilentDayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentDayWidget.swift; sourceTree = "<group>"; };
 		D65256B82FFFB13300C7DBA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D65256BA2FFFB13300C7DBA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D65256C23000874800C7DBA5 /* SilentDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SilentDay.entitlements; sourceTree = "<group>"; };
+		D65256C3300089D500C7DBA5 /* SilentDayWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SilentDayWidgetExtension.entitlements; sourceTree = "<group>"; };
 		D69A83FA2FFC990300EEF05D /* SilentDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D69A83FD2FFC990300EEF05D /* SilentDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentDayApp.swift; sourceTree = "<group>"; };
 		D69A83FF2FFC990300EEF05D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 		D69A83F12FFC990300EEF05D = {
 			isa = PBXGroup;
 			children = (
+				D65256C3300089D500C7DBA5 /* SilentDayWidgetExtension.entitlements */,
 				D69A83FC2FFC990300EEF05D /* SilentDay */,
 				D69A840D2FFC990800EEF05D /* SilentDayTests */,
 				D69A84172FFC990800EEF05D /* SilentDayUITests */,
@@ -202,6 +205,7 @@
 		D69A83FC2FFC990300EEF05D /* SilentDay */ = {
 			isa = PBXGroup;
 			children = (
+				D65256C23000874800C7DBA5 /* SilentDay.entitlements */,
 				D6B58A3A2FFCD01100659B9D /* Views */,
 				D6B58A372FFCCFFE00659B9D /* ViewModels */,
 				D6B58A302FFCCAEA00659B9D /* DesignSystem */,
@@ -543,8 +547,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SilentDayWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BBH87NBRMN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SilentDayWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SilentDayWidget;
@@ -569,8 +575,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SilentDayWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BBH87NBRMN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SilentDayWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SilentDayWidget;
@@ -717,9 +725,11 @@
 				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SilentDay/SilentDay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SilentDay/Preview Content\"";
+				DEVELOPMENT_TEAM = BBH87NBRMN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SilentDay/Info.plist;
@@ -749,9 +759,11 @@
 				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SilentDay/SilentDay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SilentDay/Preview Content\"";
+				DEVELOPMENT_TEAM = BBH87NBRMN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SilentDay/Info.plist;
